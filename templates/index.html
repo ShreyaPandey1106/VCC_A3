@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Utilization Simulator</title>
+</head>
+<body>
+    <h1>CPU Utilization Simulator</h1>
+    <form method="POST" action="/simulate">
+        <button type="submit" name="action" value="start">Start Simulation</button>
+        <button type="submit" name="action" value="stop">Stop Simulation</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
